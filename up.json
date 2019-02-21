@@ -4,9 +4,6 @@
   "regions": [
     "eu-west-1"
   ],
-  "static": {
-    "dir": "build"
-  },
   "stages": {
     "staging": {
       "hooks": {
@@ -21,6 +18,12 @@
   },
   "hooks": {
     "build": "npm build"
+  },
+  "error_pages": {
+    "variables": {
+      "support_email": "carlsenwilli@gmail.com",
+      "color": "#228ae6"
+    }
   },
   "clean": "rm -fr build"
 }
