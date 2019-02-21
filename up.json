@@ -4,20 +4,26 @@
   "regions": [
     "eu-west-1"
   ],
+  "static": {
+    "dir": "build"
+  },
+  "lambda": {
+    "memory": 1024
+  },
   "stages": {
     "staging": {
       "hooks": {
-        "build": "PUBLIC_URL=/staging npm build"
+        "build": "PUBLIC_URL=/staging npm run build"
       }
     },
     "production": {
       "hooks": {
-        "build": "PUBLIC_URL=/production npm build"
+        "build": "PUBLIC_URL=/production npm run build"
       }
     }
   },
   "hooks": {
-    "build": "npm build"
+    "build": "npm run build"
   },
   "error_pages": {
     "variables": {
