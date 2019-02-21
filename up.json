@@ -4,8 +4,9 @@
   "regions": [
     "eu-west-1"
   ],
+  "type": "static",
   "static": {
-    "dir": "static"
+    "dir": "build"
   },
   "lambda": {
     "memory": 1024
