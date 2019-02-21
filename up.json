@@ -5,7 +5,7 @@
     "eu-west-1"
   ],
   "static": {
-    "dir": "build"
+    "dir": "static"
   },
   "lambda": {
     "memory": 1024
@@ -13,17 +13,17 @@
   "stages": {
     "staging": {
       "hooks": {
-        "build": "PUBLIC_URL=/staging npm run build"
+        "build": "PUBLIC_URL=/staging npm build"
       }
     },
     "production": {
       "hooks": {
-        "build": "PUBLIC_URL=/production npm run build"
+        "build": "PUBLIC_URL=/production npm build"
       }
     }
   },
   "hooks": {
-    "build": "npm run build"
+    "build": "npm build"
   },
   "error_pages": {
     "variables": {
