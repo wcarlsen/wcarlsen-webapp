@@ -9,11 +9,8 @@ import Linkedin from 'mdi-material-ui/Linkedin';
 import Instagram from 'mdi-material-ui/Instagram';
 import { ButtonBase } from '@material-ui/core/ButtonBase';
 
-const isMobile = window.innerWidth < 500;
-
 const styles = {
   root: {
-    position: isMobile ? '' : 'fixed',
     bottom: 0,
     width: '100%'
   },
