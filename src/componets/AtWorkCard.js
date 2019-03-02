@@ -14,6 +14,7 @@ const styles = {
   card: {
     maxWidth: isMobile ? '100%' : '75%',
     width: isMobile ? 'auto' : 800,
+    marginBottom: 15,
   },
   media: {
     height: isMobile ? 300 : 400,

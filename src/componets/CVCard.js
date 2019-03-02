@@ -14,6 +14,7 @@ const isMobile = window.innerWidth <= 500;
 const styles = {
   card: {
     maxWidth: isMobile ? '100%' : '75%',
+    marginBottom: 15,
   },
   media: {
     height: isMobile ? 300 : 450,

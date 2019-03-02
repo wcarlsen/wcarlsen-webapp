@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Typography from '@material-ui/core/Typography';
 import ProfileAvatar from './ProfileAvatar';
 import List from '@material-ui/core/List';
@@ -104,7 +105,7 @@ class TopBar extends React.Component {
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
               <MenuIcon />
             </IconButton>
-            <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
+            <SwipeableDrawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
               <div
                 tabIndex={0}
                 role="button"
@@ -113,7 +114,7 @@ class TopBar extends React.Component {
               >
                 {sideList}
               </div>
-            </Drawer>
+            </SwipeableDrawer>
             <Typography variant="h6" color="inherit" className={classes.grow}>
               Willi Carlsen's website
             </Typography>
