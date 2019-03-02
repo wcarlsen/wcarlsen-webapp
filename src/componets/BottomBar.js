@@ -14,6 +14,9 @@ const styles = {
     bottom: 0,
     width: '100%'
   },
+  bottomNavigationAction: {
+    minWidth: 50,
+  }
 };
 
 class BottomBar extends React.Component {
@@ -36,10 +39,10 @@ class BottomBar extends React.Component {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction component={ButtonBase} target="_blank" href="mailto:carlsenwilli@gmail.com" value="email" label="Email" icon={<Email />} />
-        <BottomNavigationAction component={ButtonBase} target="_blank" href="https://github.com/wcarlsen" value="github" label="Github" icon={<GithubCircle />} />
-        <BottomNavigationAction component={ButtonBase} target="_blank" href="https://www.linkedin.com/in/wcarlsen" value="linkedin" label="Linkedin" icon={<Linkedin />} />
-        <BottomNavigationAction component={ButtonBase} target="_blank" href="https://www.instagram.com/willicarl" value="instagram" label="Instagram" icon={<Instagram />} />
+        <BottomNavigationAction className={classes.bottomNavigationAction} component={ButtonBase} target="_blank" href="mailto:carlsenwilli@gmail.com" value="email" label="Email" icon={<Email />} />
+        <BottomNavigationAction className={classes.bottomNavigationAction} component={ButtonBase} target="_blank" href="https://github.com/wcarlsen" value="github" label="Github" icon={<GithubCircle />} />
+        <BottomNavigationAction className={classes.bottomNavigationAction} component={ButtonBase} target="_blank" href="https://www.linkedin.com/in/wcarlsen" value="linkedin" label="Linkedin" icon={<Linkedin />} />
+        <BottomNavigationAction className={classes.bottomNavigationAction} component={ButtonBase} target="_blank" href="https://www.instagram.com/willicarl" value="instagram" label="Instagram" icon={<Instagram />} />
       </BottomNavigation >
     );
   }

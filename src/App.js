@@ -16,12 +16,6 @@ const theme = createMuiTheme({
   },
 });
 
-const styles = {
-  card: {
-    marginBottom: 10,
-  },
-};
-
 class App extends Component {
   state = {
     content: "about",
@@ -32,7 +26,6 @@ class App extends Component {
   };
 
   render() {
-    const { classes } = this.props;
 
     let contentComponent;
 
@@ -48,6 +41,9 @@ class App extends Component {
         break;
       // case "skills":
       //   contentComponent = <SkillsCard />;
+      // break;
+      // case "portfolio":
+      //   contentComponent = <portfolioCard />;
       // break;
       case "cv":
         contentComponent = <CVCard />;
