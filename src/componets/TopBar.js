@@ -23,6 +23,7 @@ import FormatListBulleted from 'mdi-material-ui/FormatListBulleted';
 const styles = {
   root: {
     flexGrow: 1,
+    marginBottom: 15,
   },
   grow: {
     flexGrow: 1,
