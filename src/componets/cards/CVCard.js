@@ -8,8 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
 import Grid from '@material-ui/core/Grid';
-import CVFile from './../assets/files/Willi_Carlsen_CV.pdf';
-import CVImage from './../assets/images/cv.png';
+import CVFile from './../../assets/files/Willi_Carlsen_CV.pdf';
+import CVImage from './../../assets/images/cv.png';
 
 const isMobile = window.innerWidth <= 500;
 

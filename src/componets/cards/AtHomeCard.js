@@ -6,40 +6,40 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import ProfileImage from './../assets/images/profile.jpg';
+import AboutImage from './../../assets/images/home.jpg';
 
 const isMobile = window.innerWidth <= 500;
 
 const styles = {
   card: {
     maxWidth: isMobile ? '100%' : '75%',
-    width: isMobile ? 'auto' : 800,
+    width: isMobile ? 'auto' : 600,
     marginBottom: 15,
   },
   media: {
-    height: isMobile ? 300 : 400,
+    height: isMobile ? 400 : 600,
   },
   content: {
     paddingBottom: 100
   }
 };
 
-function AboutMeCard(props) {
+function AtHomeCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={ProfileImage}
+          image={AboutImage}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            At work
+            At home
           </Typography>
           <Typography component="p">
-            Responsible for building and dockerizing machine learning web applications, deployments of these into AWS and Kubernetes and monitorization of all deployments. Introducing best practices from software development into the area of data science, reducing complexity, risks and future need for maintenance, by e.g. introducing code reviews, regular architecture/implementation discussions and having a fast and easy deployment cycle.
+            I live with my small family (girlfriend, son and another child on the way) in an appartment in Copenhagen. Here we enjoy having friends, family and all the opportunities the city offers close by.
           </Typography>
         </CardContent>
       </Card >
@@ -47,8 +47,8 @@ function AboutMeCard(props) {
   );
 }
 
-AboutMeCard.propTypes = {
+AtHomeCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AboutMeCard);
+export default withStyles(styles)(AtHomeCard);

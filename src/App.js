@@ -3,9 +3,10 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import TopBar from './componets/TopBar';
 import BottomBar from './componets/BottomBar';
-import AboutMeCard from './componets/AboutMeCard';
-import AtWorkCard from './componets/AtWorkCard';
-import CVCard from './componets/CVCard';
+import AboutMeCard from './componets/cards/AboutMeCard';
+import AtWorkCard from './componets/cards/AtWorkCard';
+import AtHomeCard from './componets/cards/AtHomeCard';
+import CVCard from './componets/cards/CVCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -33,9 +34,9 @@ class App extends Component {
       case "about":
         contentComponent = <AboutMeCard />;
         break;
-      // case "home":
-      //   contentComponent = <AtHomeCard />;
-      //   break;
+      case "home":
+        contentComponent = <AtHomeCard />;
+        break;
       case "work":
         contentComponent = <AtWorkCard />;
         break;
