@@ -16,8 +16,6 @@ import Information from 'mdi-material-ui/Information';
 import FileDocument from 'mdi-material-ui/FileDocument';
 import Home from 'mdi-material-ui/Home';
 import Code from 'mdi-material-ui/CodeNotEqualVariant';
-import Worker from 'mdi-material-ui/Worker';
-import FormatListBulleted from 'mdi-material-ui/FormatListBulleted';
 
 
 const styles = {
@@ -72,21 +70,9 @@ class TopBar extends React.Component {
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("work")} button key="At work">
             <ListItemIcon>
-              <Worker />
-            </ListItemIcon>
-            <ListItemText primary="At work" />
-          </ListItem>
-          <ListItem onClick={() => this.props.changeContent("portfolio")} button key="Portfolio">
-            <ListItemIcon>
-              <FormatListBulleted />
-            </ListItemIcon>
-            <ListItemText primary="Portfolio" />
-          </ListItem>
-          <ListItem onClick={() => this.props.changeContent("skills")} button key="Skills">
-            <ListItemIcon>
               <Code />
             </ListItemIcon>
-            <ListItemText primary="Skills" />
+            <ListItemText primary="At work" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("cv")} button key="CV">
             <ListItemIcon>
