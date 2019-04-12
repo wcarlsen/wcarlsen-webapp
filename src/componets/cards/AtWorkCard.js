@@ -39,7 +39,7 @@ function AboutMeCard(props) {
             At work
           </Typography>
           <Typography component="p">
-            Responsible for building and dockerizing machine learning web applications, deployments of these into AWS and Kubernetes and monitorization of all deployments. Introducing best practices from software development into the area of data science, reducing complexity, risks and future need for maintenance, by e.g. introducing code reviews, regular architecture/implementation discussions and having a fast and easy deployment cycle.
+            Soon to be Site Reliability Engineer at DFDS. Currently Data Engineer at DFDS and responsible for building and dockerizing machine learning web applications, deployments of these into AWS and Kubernetes and monitorization of all deployments. Introducing best practices from software development into the area of data science, reducing complexity, risks and future need for maintenance, by e.g. introducing code reviews, regular architecture/implementation discussions and having a fast and easy deployment cycle.
           </Typography>
         </CardContent>
       </Card >

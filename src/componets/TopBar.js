@@ -16,14 +16,14 @@ import Information from 'mdi-material-ui/Information';
 import FileDocument from 'mdi-material-ui/FileDocument';
 import Home from 'mdi-material-ui/Home';
 import Code from 'mdi-material-ui/CodeNotEqualVariant';
+import ListCheckbox from 'mdi-material-ui/FormatListCheckbox'
 
 
 const styles = {
   root: {
     flexGrow: 1,
     marginBottom: 15,
-  },
-  grow: {
+  }, grow: {
     flexGrow: 1,
   },
   menuButton: {
@@ -45,8 +45,7 @@ class TopBar extends React.Component {
 
   toggleDrawer = (side, open) => () => {
     this.setState({
-      [side]: open,
-    });
+      [side]: open, });
   };
 
   render() {
@@ -73,6 +72,12 @@ class TopBar extends React.Component {
               <Code />
             </ListItemIcon>
             <ListItemText primary="At work" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("portfolio")} button key="Portfolio">
+            <ListItemIcon>
+              <ListCheckbox />
+            </ListItemIcon>
+            <ListItemText primary="Portfolio" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("cv")} button key="CV">
             <ListItemIcon>

@@ -6,6 +6,7 @@ import BottomBar from './componets/BottomBar';
 import AboutMeCard from './componets/cards/AboutMeCard';
 import AtWorkCard from './componets/cards/AtWorkCard';
 import AtHomeCard from './componets/cards/AtHomeCard';
+import PortfolioCard from './componets/cards/PortfolioCard';
 import CVCard from './componets/cards/CVCard';
 
 const theme = createMuiTheme({
@@ -40,9 +41,9 @@ class App extends Component {
       case "work":
         contentComponent = <AtWorkCard />;
         break;
-      // case "portfolio":
-      //   contentComponent = <portfolioCard />;
-      // break;
+       case "portfolio":
+         contentComponent = <PortfolioCard />;
+       break;
       case "cv":
         contentComponent = <CVCard />;
         break;
