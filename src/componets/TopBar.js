@@ -73,12 +73,12 @@ class TopBar extends React.Component {
             </ListItemIcon>
             <ListItemText primary="At work" />
           </ListItem>
-          <ListItem onClick={() => this.props.changeContent("portfolio")} button key="Portfolio">
+          {/* <ListItem onClick={() => this.props.changeContent("portfolio")} button key="Portfolio">
             <ListItemIcon>
               <ListCheckbox />
             </ListItemIcon>
             <ListItemText primary="Portfolio" />
-          </ListItem>
+          </ListItem> */}
           <ListItem onClick={() => this.props.changeContent("cv")} button key="CV">
             <ListItemIcon>
               <FileDocument />

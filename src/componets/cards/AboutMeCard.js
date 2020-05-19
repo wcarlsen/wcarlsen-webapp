@@ -39,7 +39,7 @@ function AboutMeCard(props) {
             About me
           </Typography>
           <Typography component="p">
-            I am 30 years old and I use a lot of my spare time with my family and friends. The rest of the time is spend on fishing, computers, gaming, programming, Linux, the command line, Open-Source software, cloud computing/infrastructure, kayaking, sailing and much more.
+            I am 32 years old and I work as a Site Reliability Engineer at DFDS. I live in Copenhagen on Nørrebro with my girlfriend and two sons. My spare time is spend on family, friends, fishing, computers, gaming, programming, Linux, the command line, Open-Source software, cloud computing/infrastructure, kayaking, sailing and much more.
           </Typography>
         </CardContent>
       </Card >

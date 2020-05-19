@@ -39,7 +39,7 @@ function AtHomeCard(props) {
             At home
           </Typography>
           <Typography component="p">
-            I live with my small family (girlfriend, son and another baby boy on the way) in an appartment in Copenhagen. Here we enjoy having friends, family and all the opportunities the city offers close by.
+            I live with my small family (girlfriend Terese and two sons Anker and Jens) in an appartment in Copenhagen on Nørrebro. Here we enjoy having friends, family and all the opportunities the city offers close by.
           </Typography>
         </CardContent>
       </Card >

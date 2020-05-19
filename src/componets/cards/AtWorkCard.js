@@ -39,7 +39,7 @@ function AboutMeCard(props) {
             At work
           </Typography>
           <Typography component="p">
-            Soon to be Site Reliability Engineer at DFDS. Currently Data Engineer at DFDS and responsible for building and dockerizing machine learning web applications, deployments of these into AWS and Kubernetes and monitorization of all deployments. Introducing best practices from software development into the area of data science, reducing complexity, risks and future need for maintenance, by e.g. introducing code reviews, regular architecture/implementation discussions and having a fast and easy deployment cycle.
+            I work as a Site Reliability Engineer at DFDS. Here I'm responsible for developing a good DevOps culture and maintaining cloud resources such as AWS EKS (Kubernetes cluster), selfservice portal for onboarding developers and other cloud tools and infrastructure. Since we utilize Kubernetes we specialize in containers and Linux. I have a background as a Data Engineering (@DFDS), Data Scientist (@SimpleSite) and Growth Hacker (@SimpleSite), but slowly transitioned into a more DevOps role and I have never been happier.
           </Typography>
         </CardContent>
       </Card >

@@ -41,9 +41,9 @@ class App extends Component {
       case "work":
         contentComponent = <AtWorkCard />;
         break;
-       case "portfolio":
-         contentComponent = <PortfolioCard />;
-       break;
+      //  case "portfolio":
+      //    contentComponent = <PortfolioCard />;
+      //  break;
       case "cv":
         contentComponent = <CVCard />;
         break;
