@@ -8,7 +8,7 @@ WORKDIR /var/app
 COPY . /var/app
 
 RUN npm install
-RUN npm run build
+RUN PUBLIC_URL=/wcarlsen npm run build
 
 EXPOSE 3000
 
